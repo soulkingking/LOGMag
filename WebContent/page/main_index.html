@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/style2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    </ul>
+    </div>
+
+    <!----- banner ---->
+			<div class="banner text-center">
+				<div class="container">
+					<div class="banner-info">
+						<h1>This is our exclusive</h1>
+						<h2><label> </label>League of Gourmands<label> </label></h2>
+					</div>
+				</div>
+			</div>
+	<!----- banner ---->
+    <!----- fearuted-diesh ----->
+			<div class="fearuted-diesh">
+				<div class="container">
+					
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							         items :4,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d1.jpg" title="dish-name" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d2.jpg" title="dish-name" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d3.jpg" title="dish-name" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d4.jpg" title="dish-name" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d1.jpg" title="dish-name" />
+					                		</div>   
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d2.jpg" title="dish-name" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d3.jpg" title="dish-name" />
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d4.jpg" title="dish-name" />
+					                		</div>	
+					                	</div>
+					                </div>
+					                <!----->
+				              </div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+			</div>
+			<!----- fearuted-diesh ----->
+			<br></br>
+
+</body>
+
+</html>

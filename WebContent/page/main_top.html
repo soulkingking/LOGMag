@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//顶部导航切换
+		$(".nav li a").click(function() {
+			$(".nav li a.selected").removeClass("selected")
+			$(this).addClass("selected");
+		})
+	})
+</script>
+
+</head>
+<!-- #e83640 style="background:url(images/topbg.gif) repeat-x;" style="background-color: #e83640"-->
+<body style="background-color: #FF2D4B;">
+
+	<div class="topleft">
+		<a href="../index.jsp" target="_parent"><img
+			src="images/fmeal.png" title="系统首页" /><span
+			style="color: #FFFFFF; font-size: 25px; display: inline">吃货</span></a>
+	</div>
+
+	<ul class="nav">
+		<li><a href="provider_mag.jsp" target="indexFrame"><img
+				src="images/icon001.png" title="商户管理" />
+				<h2>商户管理</h2></a></li>
+		<li><a href="user_mag.jsp" target="indexFrame"><img
+				src="images/icon002.png" title="用户管理" />
+				<h2>用户管理</h2></a></li>
+	</ul>
+
+	<div class="topright">
+		<ul>
+			<li><a href="../Logout" target="_parent">注销</a></li>
+		</ul>
+	</div>
+</body>
+</html>
